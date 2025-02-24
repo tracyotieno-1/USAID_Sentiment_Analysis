@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USAID Sentiment Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .full-width-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .banner-image {
+            width: 100%;
+            max-height: 200px;
+            height: auto;
+            display: block;
+        }
+
+        .about-content:hover, .about-image:hover, .about-title:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+            position: relative;
+        }
+        .about-content {
+            flex: 1;
+            padding-right: 150px;
+            width: 70%;
+            margin-left: 70px;
+        }
+        .about-image {
+            flex: 1;
+            max-width: 50%;
+        }
+        .about-image img {
+            width: 350px;
+            border-radius: 8px;
+        }
+        .about-title {
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+            z-index: 2;
+            position: relative;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px gray;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .content img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #0056b3;
+        }
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #funFactContainer {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #funFactContainer h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        #funFactText {
+            font-size: 0.875rem !important;
+            line-height: 1;
+            color: #333;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Full-width banner -->
+    <img src="https://i0.wp.com/www.ictworks.org/wp-content/uploads/2025/02/usaid-power-2.png?fit=640%2C200&ssl=1" 
+     alt="USAID Banner" class="banner-image">
+
+    
+
+
+    <!-- About Section -->
+    <h2 class="about-title">About USAID</h2>
+    <div class="about-section d-flex">
+        <div class="about-content">
+            <p>
+                The United States Agency for International Development (USAID) is the primary U.S. government agency responsible for providing foreign aid and development assistance worldwide. 
+                Established in 1961, USAID works to promote global stability, economic growth, health, education, and humanitarian aid in developing countries.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHF-884wKf-qoSKMM_Vkx0ii2pil-SxMIPlw&s" alt="USAID Logo">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>USAID Sentiment Analysis</h1>
+        <div class="content">
+            <p>
+                Trump's withdrawal from USAID funding led to budget cuts in international development programs, affecting health, education, and humanitarian aid globally. 
+                Critics argued that these cuts weakened U.S. diplomatic influence, while supporters viewed them as necessary to prioritize domestic policies.
+            </p>
+            <img src="https://images.sbs.com.au/dims4/default/fa6bfb6/2147483647/strip/true/crop/3840x2160+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fd2%2F1a%2F60bebbd6462487ffb710fa5295b1%2Fusaid-header.jpg" alt="USAID Budget Cuts">
+        </div>
+
+        <div class="content">
+            <p>
+                Elon Musk has criticized government subsidies and promoted self-sufficiency. His ventures, like Starlink, have supported aid efforts in crisis zones. 
+                The growing role of tech and business leaders in international development reflects a shift from traditional government-led aid programs.
+            </p>
+            <img src="https://jang.com.pk/assets/uploads/updates/2025-02-03/30777_2202906_ELONUSAIDFEB3_updates.jpg" alt="Elon Musk and USAID">
+        </div>
+
+        <!-- Sentiment Analysis Section -->
+        <h2>Sentiment Analysis</h2>
+        <textarea id="user_input" placeholder="Enter your text here..."></textarea>
+        <button onclick="analyzeSentiment()">Analyze</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- USAIDGPT Section -->
+    <div class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+        <h1 class="text-2xl font-bold text-blue-700 text-center">USAIDGPT</h1>
+        <p class="text-gray-600 text-center">Ask me anything about USAID, Trump, or Musk in relation to USAID.</p>
+        <textarea id="query" class="w-full p-3 mt-4 border rounded-lg" rows="3" placeholder="Type your question here..."></textarea>
+        <button onclick="askUsaidGPT()" class="mt-3 bg-blue-700 text-white py-2 px-4 rounded-lg hover:bg-blue-800">Ask</button>
+        <p id="response" class="mt-4 text-gray-700"></p>
+    </div>
+
+    <!-- Fun Fact Section -->
+    <div id="funFactContainer" class="text-center mt-5 p-4 bg-light rounded shadow">
+        <h3>💡 Did you know?</h3>
+        <p id="funFactText" class="fs-5"></p>
+    </div>
+
+    <script>
+        const funFacts = [
+            "USAID was established in 1961 by President John F. Kennedy to promote global development and humanitarian aid.",
+            "USAID operates in over 100 countries, providing assistance in areas like health, education, and disaster relief.",
+            "USAID's budget is approximately $27 billion annually, making it one of the largest aid agencies in the world.",
+            "USAID played a key role in eradicating smallpox and reducing polio cases worldwide.",
+            "USAID supports programs that empower women and girls, recognizing their critical role in development."
+        ];
+
+        function displayRandomFunFact() {
+            const randomIndex = Math.floor(Math.random() * funFacts.length);
+            document.getElementById('funFactText').textContent = funFacts[randomIndex];
+        }
+
+        window.onload = displayRandomFunFact;
+
+        // Trigger a new fun fact when the form is submitted
+        document.querySelector('form').addEventListener('submit', function() {
+            displayRandomFunFact();
+        });
+
+        function analyzeSentiment() {
+            let text = document.getElementById("user_input").value;
+            fetch("/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerHTML = 
+                    `Sentiment: ${data.sentiment} <br> Text Length: ${data.length} characters`;
+            });
+        }
+
+        async function askUsaidGPT() {
+            let query = document.getElementById("query").value;
+            let responseElement = document.getElementById("response");
+            responseElement.innerText = "Thinking...";
+
+            let response = await fetch("/ask", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({query: query})
+            });
+
+            let data = await response.json();
+            responseElement.innerText = data.response || "Error occurred.";
+        }
+    </script>
+</body>
+</html>
