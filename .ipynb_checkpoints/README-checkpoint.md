@@ -40,11 +40,12 @@ The project utilizes the following dataset:
 •	Exported Cleaned Data: df.to_csv('cleaned_dataset.csv', index=False)
 8. Exploratory Data Analysis (EDA)
 Key Visualizations:
+(Place visualizations here)
 •	Sentiment Distribution: Analyzed the proportion of positive, negative, and neutral comments.
 •	Word Clouds: Highlighted the most frequently used words in different sentiment categories.
 •	Time-Series Analysis: Tracked changes in sentiment over time.
 •	Top Keywords: Identified commonly used words in discussions about USAID.
-10. Sentiment Analysis Model
+9. Sentiment Analysis Model
 9.1 Model Selection
 The project experimented deep learning models:
 1.	Deep Learning Models: 
