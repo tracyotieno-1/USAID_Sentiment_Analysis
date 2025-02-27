@@ -6,10 +6,9 @@ The United States Agency for International Development (USAID) provides money fo
 
 ### Research Questions
 
-What is the Reddit and Youtube community's perception of USAID?
-Has the mood changed before and after significant policy choices (such as funding cuts)?
-Which USAID-related issues or compliments are most frequently expressed?
-Is it possible to forecast public support for future policies using sentiment trends?
+- What is the Reddit and Youtube community's perception of USAID?
+- Has the mood changed before and after significant policy choices (such as funding cuts)?
+- Which USAID-related issues or compliments are most frequently expressed?
 
 By using natural language processing (NLP) techniques to categorize sentiment (positive, negative, or neutral), this study seeks to analyze public opinion regarding USAID. It also aims to find important conversation topics, spot changes in sentiment patterns over time, and investigate how political events—like funding cuts—affect public opinion. The results will shed light on how USAID is viewed and guide future communication or policy initiatives.
 
@@ -17,9 +16,9 @@ By using natural language processing (NLP) techniques to categorize sentiment (p
 Discussions about the impact of the USAID funding withdrawal are common on social media sites like Reddit and Youtube, where users share a range of viewpoints. These conversations are still unstructured, though, and challenging to do large-scale analysis. Policymakers, NGOs, and stakeholders must comprehend public opinion of USAID to evaluate how the organization's role and efficacy are perceived.
 
 ### Objectives
-Analyze public sentiment on USAID after Trump’s withdrawal.
-Extract key discussion themes from Reddit and Youtube posts.
-Build a chatbot for interactive sentiment queries.
+- Analyze public sentiment on USAID after Trump’s withdrawal.
+- Extract key discussion themes from Reddit and Youtube posts.
+- Build a chatbot for interactive sentiment queries.
 
 
 ### Success Metrics:
