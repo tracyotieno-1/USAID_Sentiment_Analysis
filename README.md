@@ -241,9 +241,9 @@ Key visualizations include:
 This project applies sentiment analysis and predictive modeling to extract meaningful insights from public discussions on USAID.
 ## Recurrent Neural Network (RNN-LSTM)
 Performance Metrics:
-- 85% Accuracy,
-- F1-Score:
-- 84%, AUC: 94%
+- Accuracy 87%
+- F1-Score: 87%
+- AUC: 95%
 
 ## Strengths:
 
@@ -262,9 +262,9 @@ Implication:
 ## Convolutional Neural Network (CNN)
 Performance Metrics:
 
-- 85% Accuracy
-- F1-Score: 84%
-- AUC: 94%
+- 86% Accuracy
+- F1-Score: 86%
+- AUC: 96%
 
 ## Strengths:
 
@@ -283,4 +283,3 @@ Implication:
 ### Conclusion: 
 
 CNN and LSTM models achieve high performance, with 85% accuracy, 84% F1-score, and 94% AUC. While CNN is faster, LSTM captures deeper contextual dependencies. Either model can be used based on computational constraints and contextual requirements.
->>>>>>> 389717c383880dcab0c1bb2c3d4a0a978102e774
