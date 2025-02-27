@@ -17,17 +17,8 @@ Discussions about the impact of the USAID funding withdrawal are common on socia
 ### Objectives
 Analyze public sentiment on USAID after Trump’s withdrawal.
 Extract key discussion themes from Reddit and Youtube posts.
-Compare sentiment across platforms (if other data sources are added later).
 Build a chatbot for interactive sentiment queries.
 
-### Project Goals
-This research aims to use Natural Language Processing (NLP) to examine Reddit and Youtube comments about USAID and identify sentiment patterns and important subjects.
-
-##Business Impact:
-
-Offer insights into the efficacy of policies and areas of concern.
-Assist NGOs and policymakers in understanding public opinion about USAID.
-Help academics, analysts, and journalists monitor patterns in discourse.
 
 ### Success Metrics:
 Model Accuracy: Achieve at least 85% accuracy for sentiment classification.
@@ -42,50 +33,9 @@ The project's dataset is made up of Reddit and Youtube comments about USAID that
 
 By using natural language processing (NLP) techniques to categorize sentiment (positive, negative, or neutral), this study seeks to analyze public opinion regarding USAID. It also aims to find important conversation topics, spot changes in sentiment patterns over time, and investigate how political events—like funding cuts—affect public opinion. The results will shed light on how USAID is viewed and guide future communication or policy initiatives.
 
-### Model Performance Overview
-To enable a data-driven understanding of public sentiment, policy impacts, and potential areas of concern, this project intends to extract meaningful insights from public discussions on USAID through sentiment analysis and predictive modeling.
 
-Long Short term memory (LSTM):
-Metric performance: 87% accuracy F1-Score: 87%, 95% is the AUC.
 
-Strengths:
-
-Sequential Data Handling: The LSTM model is ideally suited for sentiment analysis since it successfully captures contextual dependencies in text.
-High Predictive Power: The model exhibits strong discrimination between sentiment classes (positive, negative, and neutral), as evidenced by its 97% AUC score.
-Balanced Performance: The high F1-score indicates that the model reduces the chance of misclassification by maintaining a good balance between precision and recall.
-
-Weaknesses:
-
-Computationally Expensive: Because LSTMs are sequential, they demand a large amount of computational resources and training time.
-Possible Overfitting: Deeper LSTMs can occasionally memorize patterns, which can impact generalization on unseen data, even though this is not visible in the results as of yet.
-
-Implication: The LSTM model performs exceptionally well in sentiment classification, which makes it a very dependable tool for figuring out public opinion and trends regarding issues on USAID.
-
-The CNN, or convolutional neural network:
-Metrics of Performance: 85% accuracy, F1-Score: 84%, 94% is the AUC.
-
-Strengths:
-
-Effective Feature Extraction: CNNs use convolutional filters to effectively extract important sentiment patterns from text data.
-Comparable Performance: CNN is a powerful substitute for LSTM in sentiment analysis, achieving the same accuracy, F1-score, and AUC score.
-Faster Training: Because CNNs can process information in parallel, they are computationally efficient and train more quickly than LSTMs.
-
-Weaknesses:
-
-Limited Contextual Understanding: CNNs may have trouble understanding long-range dependencies in text because they concentrate on local features.
-Possible Information Loss: Convolution layers' fixed window sizes may cause some contextual meaning to be lost.
-Implication: In situations where computational efficiency is a top concern, the CNN model is a great substitute for LSTM. Nevertheless, in contrast to sequential models, it might not have a deeper contextual understanding.
-
-Conclusion
-
-Both CNN and LSTM models perform well, achieving 94% AUC, 84% F1-score, and 85% accuracy. CNN provides faster training and competitive results, but LSTM is better at capturing long-term dependencies in text.
-
-Based on the outcomes, both models can be applied interchangeably, contingent on the requirements for deep contextual understanding and computational limitations.
-
-### Data Transformation Overview
-Several preprocessing and transformation procedures were applied to the raw Reddit comments on USAID to guarantee the best possible performance of the:
-
-LSTM and CNN models. 
+### LSTM and CNN models. 
 
 These procedures were essential for preparing the data for deep learning models, cleaning it, and turning textual information into numerical representations.
 
@@ -110,8 +60,8 @@ Dividing Data to Train Models
 Train-Test Split (80-20%): Training and testing sets were created from the dataset.
 A portion of the training data was reserved for validation, resulting in a train-validation split of 80–20%.
 
-CNN Models: Normalization
-Feature Scaling: To guarantee stable training, embeddings were scaled because CNNs benefit from normalized inputs.
+### CNN Models: Normalization
+`Feature Scaling:` To guarantee stable training, embeddings were scaled because CNNs benefit from normalized inputs.
 Data Transformation's Effects
 
 By eliminating noise and unnecessary data, the model's efficiency was increased.
@@ -119,49 +69,39 @@ Enhanced feature representation made it possible for CNN and LSTM to recognize s
 Reduced computational complexity by guaranteeing constant input length.
 The dataset was optimized for deep learning-based sentiment classification through this methodical transformation process, guaranteeing high model accuracy and dependability.
 
-
 ### Model Performance Overview
-This project applies sentiment analysis and predictive modeling to extract meaningful insights from public discussions on USAID.
-## Recurrent Neural Network (RNN-LSTM)
-Performance Metrics:
-- Accuracy 87%
-- F1-Score: 87%
-- AUC: 95%
+To enable a data-driven understanding of public sentiment, policy impacts, and potential areas of concern, this project intends to extract meaningful insights from public discussions on USAID through sentiment analysis and predictive modeling.
 
-## Strengths:
+`Long Short term memory (LSTM):` Metric performance: 87% accuracy F1-Score: 87%, 95% is the AUC.
 
-- Sequential Data Handling: LSTM effectively captures contextual dependencies in text.
-- High Predictive Power: Strong discrimination between sentiment classes (Positive, Negative, Neutral), evidenced by a 94% AUC score.
-- Balanced Performance: The high F1-score suggests a strong balance between precision and recall, minimizing misclassification.
+### Strengths:
 
-## Weaknesses:
+Sequential Data Handling: The LSTM model is ideally suited for sentiment analysis since it successfully captures contextual dependencies in text.
+High Predictive Power: The model exhibits strong discrimination between sentiment classes (positive, negative, and neutral), as evidenced by its 97% AUC score.
+Balanced Performance: The high F1-score indicates that the model reduces the chance of misclassification by maintaining a good balance between precision and recall.
 
-- Computationally Expensive: LSTMs require significant computational resources and training time.
-- Potential Overfitting: Deep LSTMs may memorize patterns, affecting generalization on unseen data.
+### Weaknesses:
 
-Implication: 
-- The LSTM model demonstrates exceptional sentiment classification performance, making it a highly reliable tool for analyzing public opinion trends regarding USAID.
+Computationally Expensive: Because LSTMs are sequential, they demand a large amount of computational resources and training time.
+Possible Overfitting: Deeper LSTMs can occasionally memorize patterns, which can impact generalization on unseen data, even though this is not visible in the results as of yet.
 
-## Convolutional Neural Network (CNN)
-Performance Metrics:
+Implication: The LSTM model performs exceptionally well in sentiment classification, which makes it a very dependable tool for figuring out public opinion and trends regarding issues on USAID.
 
-- 86% Accuracy
-- F1-Score: 86%
-- AUC: 96%
+The CNN, or convolutional neural network:
+Metrics of Performance: 85% accuracy, F1-Score: 84%, 94% is the AUC.
 
-## Strengths:
+Strengths:
 
-- Efficient Feature Extraction: Convolutional filters effectively identify key sentiment patterns.
-- Comparable Performance: CNN achieves similar accuracy, F1-score, and AUC as LSTM.
-- Faster Training: CNNs process data in parallel, making them computationally efficient.
+Effective Feature Extraction: CNNs use convolutional filters to effectively extract important sentiment patterns from text data.
+Comparable Performance: CNN is a powerful substitute for LSTM in sentiment analysis, achieving the same accuracy, F1-score, and AUC score.
+Faster Training: Because CNNs can process information in parallel, they are computationally efficient and train more quickly than LSTMs.
 
-## Weaknesses:
+Weaknesses:
 
-- Limited Contextual Understanding: CNNs focus on local features, potentially missing long-range dependencies.
-- Possible Information Loss: Fixed window sizes in convolution layers may lead to a loss of contextual meaning.
+Limited Contextual Understanding: CNNs may have trouble understanding long-range dependencies in text because they concentrate on local features.
+Possible Information Loss: Convolution layers' fixed window sizes may cause some contextual meaning to be lost.
+Implication: In situations where computational efficiency is a top concern, the CNN model is a great substitute for LSTM. Nevertheless, in contrast to sequential models, it might not have a deeper contextual understanding.
 
-Implication:
-- CNN is a robust alternative to LSTM, particularly in scenarios where computational efficiency is a priority.
 
 ### Conclusion: 
 
