@@ -45,13 +45,13 @@ By using natural language processing (NLP) techniques to categorize sentiment (p
 ### Model Performance Overview
 To enable a data-driven understanding of public sentiment, policy impacts, and potential areas of concern, this project intends to extract meaningful insights from public discussions on USAID through sentiment analysis and predictive modeling.
 
-Recurrent Neural Networks (RNN-LSTM):
-Metric performance: 85% accuracy F1-Score: 84%, 94% is the AUC.
+Long Short term memory (LSTM):
+Metric performance: 87% accuracy F1-Score: 87%, 95% is the AUC.
 
 Strengths:
 
 Sequential Data Handling: The LSTM model is ideally suited for sentiment analysis since it successfully captures contextual dependencies in text.
-High Predictive Power: The model exhibits strong discrimination between sentiment classes (positive, negative, and neutral), as evidenced by its 94% AUC score.
+High Predictive Power: The model exhibits strong discrimination between sentiment classes (positive, negative, and neutral), as evidenced by its 97% AUC score.
 Balanced Performance: The high F1-score indicates that the model reduces the chance of misclassification by maintaining a good balance between precision and recall.
 
 Weaknesses:
