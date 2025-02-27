@@ -282,4 +282,8 @@ Implication:
 - 
 ### Conclusion: 
 
-CNN and LSTM models achieve high performance, with 85% accuracy, 84% F1-score, and 94% AUC. While CNN is faster, LSTM captures deeper contextual dependencies. Either model can be used based on computational constraints and contextual requirements.
+- Successful Sentiment Analysis Model – We developed and deployed a sentiment analysis model that accurately predicts sentiment on USAID-related discussions while also providing word count insights for deeper text analysis.
+- Chatbot for USAID Discussions – A specialized chatbot was built and deployed, designed to engage users exclusively on topics related to USAID, ensuring focused and informative interactions.
+- Data-Driven Insights for Stakeholders – The sentiment analysis model provides valuable insights for policymakers, NGOs, and donors, helping them understand public perception and refine communication or funding strategies.
+- High Model Performance – LSTM was chosen for sentiment classification due to its superior accuracy and F1 scores across all sentiment classes, ensuring reliable sentiment detection.
+- Future Enhancements – The project can be expanded by incorporating real-time sentiment tracking, integrating more data sources, and improving the chatbot’s conversational depth using advanced NLP techniques.
