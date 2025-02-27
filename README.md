@@ -279,7 +279,7 @@ Performance Metrics:
 
 Implication:
 - CNN is a robust alternative to LSTM, particularly in scenarios where computational efficiency is a priority.
-- 
+
 ### Conclusion: 
 
 - `Successful Sentiment Analysis Model` – We developed and deployed a sentiment analysis model that accurately predicts sentiment on USAID-related discussions while also providing word count insights for deeper text analysis.
