@@ -143,8 +143,9 @@ Class Imbalance: To ascertain whether the dataset was biased toward a specific s
 Spelling and Grammar Issues – Informal language and misspellings in Reddit comments were addressed using text normalization techniques to enhance data consistency.
 
 ### Data Visualization Summary
+
 Several visualizations were carried out to gain a better understanding of the dataset's sentiment distribution and important patterns. To determine whether the dataset is balanced or skewed towards a specific sentiment, a count plot was used to create a sentiment distribution plot. Word clouds highlighting the most commonly used terms in each category were created for positive, negative, and neutral sentiments to investigate text patterns. Key terms influencing each sentiment classification were also revealed by bar charts showing the most frequently used words for each sentiment. To identify possible sentiment shifts brought on by significant events, a sentiment trend analysis over time was conducted to look at how opinions changed. Together, these visualizations provided a more in-depth understanding of the dataset, which aided in feature engineering and model training.
-=======
+
 The United States Agency for International Development (USAID) funds various initiatives, including economic development, education, and healthcare. However, public perception of USAID has declined, particularly following President Donald Trump's decision to withdraw funding from some of its programs. This has ignited discussions on platforms like Reddit, where users express diverse opinions on funding decisions, policies, and USAID's overall impact. Understanding public sentiment is crucial for policymakers, stakeholders, and governmental and non-governmental organizations to refine communication strategies and evaluate the effects of policy changes.
 Key questions to consider:
 - What is the general sentiment of the Reddit community regarding USAID?
