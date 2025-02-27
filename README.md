@@ -1,7 +1,7 @@
 ## USAID Sentiment Analysis
 ### Public Sentiment Analysis on USAID After Trump’s Withdrawal
 ### Business Understanding
-<<<<<<< HEAD
+
 The United States Agency for International Development (USAID) provides money for a range of initiatives, including those related to economic development, education, and health. However, the public's opinion of USAID has been deteriorating recently, particularly since President Donald Trump stopped supporting some of its initiatives. This has sparked debates on websites like Reddit, where users share their differing views on the funding choices, policies, and effects of USAID. Policymakers and stakeholders need to understand public sentiment to evaluate how the public is responding to USAID programs. Governmental and non-governmental organizations to enhance communication tactics. Scholars examine how policy changes affect public opinion.
 
 Among the issues we must ask ourselves are:
